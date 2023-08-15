@@ -1,0 +1,341 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:Myriad Pro;
+}
+
+a{
+	text-decoration:none;
+	color:#000;
+}
+
+li {
+	list-style-type:none;
+}
+
+.header_container{
+	max-width:650px;
+	margin:0 auto;
+}
+
+.container{
+	max-width:950px;
+	margin:0 auto;
+}
+/* header */
+
+.header{
+	height:100vh;
+}
+
+.nav{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.nav a {
+	color:#979797;
+}
+
+.nav a:hover{
+	color:#000;
+	transition:.4s;
+}
+
+.header_content{
+	text-align:center;
+	height:90vh;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	
+}
+
+.content_item h1{
+	font-size:44px;
+	font-weight:300;
+	color:#1e1e1e;
+	line-height:1;
+	}
+
+.main_h1{
+	font-size:44px;
+	font-weight:300;
+	color:#1e1e1e;
+	line-height:1;
+}
+
+.main_p{
+	color:#888;
+	font-style:italic;
+	font-size:19px;
+	margin-bottom:30px;
+}
+
+.btn {
+	text-transform:uppercase;
+	border:1px solid #000;
+	background-color:transparent;
+	padding:10px 25px;
+	cursor:pointer;
+	letter-spacing:1px;
+}
+
+.content_item {
+	flex:0 1 50%;
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-end;
+	align-items:center;
+}
+
+.item--dots{
+	gap:5px;
+}
+
+.dot{
+	width:10px;
+	height:10px;
+	background-color:#d0d0d0;
+	border-radius:100%;
+}
+
+
+.item--dots .dot:nth-child(1){
+	opacity:0.3;
+}
+
+
+.item--dots .dot:nth-child(2){
+	opacity:0.7;
+}
+
+/* about*/
+
+.section__about{
+	background-color:black;
+	position:relative;
+}
+
+.about_items{
+	padding:10% 0;
+}
+
+.line{
+	width:3px;
+	background-color:#fff;
+	height:100%;
+	position:absolute;
+	left:50%;
+	top:0;
+	transform: translateX(-127%);
+}
+.about_item{
+	color: #fff;
+	width: 50%;
+	margin-top: 20px;
+	padding: 0 5%;
+	position:relative;
+}
+
+.about_item h1,  .about_item  p{
+	text-align:right
+}
+
+.about_item h1{
+	font-size:44px;
+	font-weight:300;
+}
+
+.item--2{
+	margin-left:auto;
+	
+}
+
+.item--2 h1, .item--2 p{
+	text-align:left;
+}
+
+.circle{
+	position: absolute;
+	top: 0;
+	right: -8px;
+	width: 20px;
+	height: 20px;
+	background-color: #000;
+	border: 3px solid #fff;
+	border-radius: 100%;
+	z-index: 1;
+}
+
+.circle--2{
+	left:-12px;
+	right:inherit;
+}
+
+.circle--3{
+	width:30px;
+	height:30px;
+	right:-13px;
+}
+
+.about_img{
+	padding-top:5%;
+}
+
+.about_img img {
+	max-width:100%;
+	width:100%;
+	display:block;
+	
+
+
+}
+
+/* team */
+
+.h1--team{
+	font-size:34px;
+	padding-top:10%;
+	font-weight:300;
+}
+
+.heading{
+	text-align:center;
+}
+
+.items{
+	display:flex;
+	justify-content:space-between;
+}
+
+.team_items{
+	align-items:flex-end;
+}
+.team_item{
+	text-align:center;
+}
+
+.team_item h2{
+	line-height:1;
+}
+
+.team_item p{
+	padding-bottom:17px;
+}
+
+.team_item:nth-child(2){
+	padding-bottom:15%;
+}
+
+.section__services{
+	background-image:url("img/blackbg.png");
+	background-size:cover;
+	background-repeat:no-repeat;
+	
+}
+
+.main--h1__mod{
+	padding-top:22%;
+	color:#fff;
+}
+
+.services_item{
+	color:#fff;
+	text-align:center;
+	flex:0 1 32%;
+}
+
+.services_item h2{
+	line-height:2;
+}
+
+.services_item p{
+	color:#313131;
+}
+
+.items__per{
+	align-items:center;
+	
+}
+
+.items__per {
+	color:#222;
+}
+.item__heading__end{
+	align-items:center;
+	gap:10px;
+}
+
+
+.perspectives_items{
+	position:relative;
+}
+
+.perspectives_item p {
+	color:#3a3a3a;
+}
+
+.perspectives_item{
+	padding-top:15%;
+}
+
+.btn--pers{
+	background-color:#fff;
+	border:none;
+	position:absolute;
+	bottom:15%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	letter-spacing:0;
+	font-weight:700;
+	padding:18px 38px;
+}
+
+/* contact */
+
+.contact_item{
+	text-align:center;
+	flex:0 1 33%;
+}
+
+.contact_item a {
+	display:inline-block;
+}
+
+.form{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	gap:10px;
+	padding-top:10%;
+}
+
+.input{
+	width:80%;
+	text-align:center;
+	padding:15px;
+	outline:none;
+}
+
+.form .input:nth-child(4){
+	text-align:left;
+	padding-bottom:14%;
+}
+
+.btn--form{
+	width:80%;
+	background-color:#000;
+	color:#fff;
+	letter-spacing:0;
+	font-weight:700;
+}
+
+.end{
+	text-align:center;
+	padding:10% 0 3%;
+}
